@@ -1,70 +1,225 @@
-# Getting Started with Create React App
+# AI-Powered Tweet Recommendation System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An intelligent Twitter feed that uses Google Gemini AI to score and rank tweets based on your interests. Built for a hackathon to demonstrate proof-of-concept AI-powered content curation.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetches 100 tweets from X (Twitter) API with images
+- AI-powered scoring using Google Gemini
+- Two themed feeds:
+  - **Productivity & Work-Life Balance**: Helpful advice and insights
+  - **Funny Memes**: Humorous content and entertainment
+- Twitter-like UI built with React
+- Local caching to avoid API rate limits
 
-### `npm start`
+## Architecture
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+X API → tweets.json → Gemini AI Scoring → scored_tweets.json → React Feed
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+### 1. Install Python Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+pip install searchtweets-v2 google-generativeai python-dotenv
+```
 
-### `npm run build`
+Or use the requirements file:
+```bash
+pip install -r requirements.txt
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Configure API Keys
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a `.env` file in the root directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cp .env.example .env
+```
 
-### `npm run eject`
+Edit `.env` and add your API keys:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```env
+# X (Twitter) API v2 Credentials
+SEARCHTWEETS_BEARER_TOKEN=your_twitter_bearer_token_here
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Google Gemini API Key
+GEMINI_API_KEY=your_gemini_api_key_here
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Where to get API keys:**
+- X API: https://developer.twitter.com/en/portal/dashboard
+- Gemini API: https://makersuite.google.com/app/apikey
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Fetch Tweets
 
-## Learn More
+Run the fetch script to download 100 tweets with images:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+python fetch_tweets.py
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will create `tweets.json` with ~100 tweets (50 productivity, 50 memes).
 
-### Code Splitting
+### 4. Score Tweets with AI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Run the scoring script to evaluate tweets using Gemini:
 
-### Analyzing the Bundle Size
+```bash
+python score_tweets.py
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This will:
+- Score each tweet (0-10) against both themes
+- Filter to high-scoring tweets (7+)
+- Create `scored_tweets.json` with ranked results
 
-### Making a Progressive Web App
+### 5. Copy Scored Data to React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+cp scored_tweets.json tweet-recommender/src/scored_tweets.json
+```
 
-### Advanced Configuration
+### 6. Run the React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+cd tweet-recommender
+npm install
+npm start
+```
 
-### Deployment
+The app will open at http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Demo Flow
 
-### `npm run build` fails to minify
+1. **Select a theme** - Choose between Productivity or Memes
+2. **View AI-curated feed** - See tweets ranked by relevance
+3. **Switch themes** - Watch the feed completely change based on AI scoring
+4. **Hover over scores** - See why the AI scored each tweet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Structure
+
+```
+.
+├── fetch_tweets.py          # Fetch tweets from X API
+├── score_tweets.py          # Score tweets with Gemini AI
+├── prompts.json             # Theme definitions and scoring criteria
+├── tweets.json              # Cached tweets (generated)
+├── scored_tweets.json       # AI-scored results (generated)
+├── .env                     # API keys (create this)
+├── .env.example             # API keys template
+├── requirements.txt         # Python dependencies
+└── tweet-recommender/       # React frontend
+    ├── src/
+    │   ├── App.js           # Main app component
+    │   ├── App.css          # App styles
+    │   ├── components/
+    │   │   ├── Tweet.js     # Tweet card component
+    │   │   └── Tweet.css    # Tweet styles
+    │   └── scored_tweets.json  # Copy of scored data
+    └── package.json
+```
+
+## How It Works
+
+### 1. Tweet Collection
+The `fetch_tweets.py` script searches X for:
+- **Productivity**: `"productivity OR burnout OR work-life balance" has:images`
+- **Memes**: `"meme OR memes OR funny" has:images`
+
+### 2. AI Scoring
+The `score_tweets.py` script sends each tweet to Gemini with:
+- The tweet text
+- Author info
+- Scoring criteria for each theme
+
+Gemini returns a score (0-10) and explanation.
+
+### 3. Feed Rendering
+React app displays tweets sorted by score, with:
+- Author profile and name
+- Tweet text and images
+- Engagement metrics
+- AI score badge
+
+## Customization
+
+### Add More Themes
+
+Edit `prompts.json`:
+
+```json
+{
+  "productivity": { ... },
+  "memes": { ... },
+  "your_theme": {
+    "theme": "Your Theme Name",
+    "prompt": "Brief description",
+    "scoring_instruction": "Detailed scoring criteria..."
+  }
+}
+```
+
+Then update `App.js` themes object.
+
+### Adjust Scoring Threshold
+
+In `score_tweets.py`, change the filter threshold:
+
+```python
+high_scoring = [t for t in scored_tweets if t["score"] >= 6]  # Lower threshold
+```
+
+### Fetch More Tweets
+
+In `fetch_tweets.py`, adjust `max_results`:
+
+```python
+"max_results": 100  # Increase per theme
+```
+
+## Hackathon Tips
+
+1. **Demo the "magic"**: Switch between themes to show how AI completely reorders the feed
+2. **Explain the scores**: Hover over score badges to show AI reasoning
+3. **Show the data**: Open `scored_tweets.json` to show raw AI scores
+4. **Emphasize personalization**: This is proof-of-concept for infinite customization
+
+## Troubleshooting
+
+### No tweets fetched
+- Check your X API bearer token in `.env`
+- Verify you have Essential access (free tier)
+- Try broader search queries
+
+### AI scoring fails
+- Verify Gemini API key in `.env`
+- Check you have free tier quota remaining
+- Lower the batch size if hitting rate limits
+
+### React app shows empty feed
+- Ensure you copied `scored_tweets.json` to `tweet-recommender/src/`
+- Check that scoring produced high-scoring tweets (7+)
+- Look in browser console for errors
+
+## Future Enhancements
+
+- Real-time scoring (score tweets on-demand)
+- User prompt input (type your own theme)
+- Multiple theme mixing
+- Engagement prediction
+- Export curated feed
+
+## Tech Stack
+
+- **Backend**: Python 3.x
+- **AI**: Google Gemini API (gemini-1.5-flash)
+- **Data Source**: X (Twitter) API v2
+- **Frontend**: React 18
+- **Styling**: CSS3
+
+## License
+
+MIT - Built for hackathon demonstration purposes.
