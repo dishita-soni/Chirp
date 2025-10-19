@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f7f9fa;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 42px;
+}
+
+.logo-icon {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 10px 0 0 0;
+  opacity: 0.9;
+  font-size: 17px;
+}
+
+/* Theme Selector */
+.theme-selector {
+  background: white;
+  border-bottom: 1px solid #e1e8ed;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.theme-selector-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.theme-selector h2 {
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  color: #14171a;
+}
+
+.theme-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.theme-button {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px;
+  border: 2px solid #e1e8ed;
+  border-radius: 16px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-button:hover {
+  border-color: #667eea;
+  background: #f7f9ff;
+}
+
+.theme-button.active {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.theme-icon {
+  font-size: 42px;
+}
+
+.theme-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.theme-name {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.theme-desc {
+  font-size: 15px;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px;
+  width: 100%;
+  flex: 1;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e1e8ed;
+}
+
+.feed-header h2 {
+  margin: 0;
+  font-size: 26px;
+  color: #14171a;
+}
+
+.tweet-count {
+  color: #657786;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: #657786;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 16px;
+  border: 4px solid #e1e8ed;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #657786;
+}
+
+.empty-state p {
+  margin: 8px 0;
+}
+
+.empty-hint {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Tweets Container */
+.tweets-container {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.footer {
+  background: white;
+  border-top: 1px solid #e1e8ed;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+  color: #657786;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
+    padding: 16px;
+  }
+
+  .theme-selector {
+    padding: 16px;
+  }
+
+  .theme-button {
+    min-width: 100%;
+  }
+
+  .main-content {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "productivity": [
+    {
+      "id": "1234567896",
+      "text": "Stop glorifying the grind. Start normalizing rest. Your best work comes from a rested mind, not an exhausted one. #worklifebalance",
+      "created_at": "2025-10-18T07:20:00.000Z",
+      "author": {
+        "id": "117",
+        "name": "Productivity Expert",
+        "username": "prodexpert",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 2341,
+        "retweet_count": 567,
+        "reply_count": 89
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample7.jpg",
+          "media_key": "media7"
+        }
+      ],
+      "theme_hint": "productivity",
+      "score": 9,
+      "score_reason": "This tweet offers a thoughtful perspective on work culture, contrasting toxic 'hustle' with the importance of rest for productivity. It's a concise and impactful message that promotes mental health awareness and a healthier approach to work."
+    },
+    {
+      "id": "1234567890",
+      "text": "Hot take: The best productivity hack is learning to say no. Not everything deserves your time and energy. Protect your bandwidth like it's your most valuable resource - because it is. #productivity",
+      "created_at": "2025-10-18T10:30:00.000Z",
+      "author": {
+        "id": "111",
+        "name": "WorkLife Wisdom",
+        "username": "worklifewiz",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 1245,
+        "retweet_count": 342,
+        "reply_count": 87
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample1.jpg",
+          "media_key": "media1"
+        }
+      ],
+      "theme_hint": "productivity",
+      "score": 8,
+      "score_reason": "This tweet offers a direct, actionable, and insightful piece of advice on productivity and avoiding burnout by emphasizing the importance of setting boundaries. It frames 'saying no' as a valuable skill and highlights the personal resource of 'bandwidth', which is a thoughtful perspective."
+    },
+    {
+      "id": "1234567891",
+      "text": "Burnout isn't a badge of honor. It's a warning sign you've been ignoring. Rest is productive. Taking breaks is smart strategy, not weakness.",
+      "created_at": "2025-10-18T09:15:00.000Z",
+      "author": {
+        "id": "112",
+        "name": "Mental Health Matters",
+        "username": "mentalwellness",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 3421,
+        "retweet_count": 892,
+        "reply_count": 156
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample2.jpg",
+          "media_key": "media2"
+        }
+      ],
+      "theme_hint": "productivity",
+      "score": 8,
+      "score_reason": "This tweet offers a thoughtful perspective on burnout, reframing rest and breaks as essential strategies rather than signs of weakness. It promotes mental health awareness and a healthier approach to work."
+    },
+    {
+      "id": "1234567892",
+      "text": "Work-life balance doesn't mean equal time. It means enough time for what matters. Some weeks work wins. Some weeks life wins. Both are okay.",
+      "created_at": "2025-10-18T08:45:00.000Z",
+      "author": {
+        "id": "113",
+        "name": "Career Coach Kelly",
+        "username": "careerkelly",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 892,
+        "retweet_count": 234,
+        "reply_count": 45
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample3.jpg",
+          "media_key": "media3"
+        }
+      ],
+      "theme_hint": "productivity",
+      "score": 8,
+      "score_reason": "This tweet offers a thoughtful and realistic perspective on work-life balance, reframing it from an 'equal time' metric to one of 'enough time for what matters.' It normalizes the ebb and flow of priorities, which is helpful for avoiding burnout and managing expectations."
+    }
+  ],
+  "memes": [
+    {
+      "id": "1234567897",
+      "text": "Nobody:\nAbsolutely nobody:\nMy brain at 3am: Remember that embarrassing thing you did 7 years ago? 💀",
+      "created_at": "2025-10-18T06:45:00.000Z",
+      "author": {
+        "id": "118",
+        "name": "Comedy Central",
+        "username": "comedycentral",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 12456,
+        "retweet_count": 3421,
+        "reply_count": 678
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample8.jpg",
+          "media_key": "media8"
+        }
+      ],
+      "theme_hint": "memes",
+      "score": 9,
+      "score_reason": "This tweet perfectly captures a universally relatable and humorous experience using a popular meme format. The \"Nobody:\" setup effectively highlights the intrusive and often absurd nature of late-night thoughts, making it highly entertaining and clever."
+    },
+    {
+      "id": "1234567893",
+      "text": "POV: You spent 3 hours debugging only to realize you forgot to save the file 💀 #programmer #meme",
+      "created_at": "2025-10-18T11:20:00.000Z",
+      "author": {
+        "id": "114",
+        "name": "Meme Lord",
+        "username": "memelord42",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 5643,
+        "retweet_count": 1234,
+        "reply_count": 298
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample4.jpg",
+          "media_key": "media4"
+        }
+      ],
+      "theme_hint": "memes",
+      "score": 8,
+      "score_reason": "Relatable situation for programmers, uses a common meme format (POV) and a relevant emoji to convey frustration and humor. Clever observation of a common coding pitfall."
+    },
+    {
+      "id": "1234567894",
+      "text": "Me: I'll start my diet tomorrow\nAlso me at 2am: 🍕🍔🍟🌮🍩",
+      "created_at": "2025-10-18T10:50:00.000Z",
+      "author": {
+        "id": "115",
+        "name": "Relatable Content",
+        "username": "relatable",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 8934,
+        "retweet_count": 2156,
+        "reply_count": 412
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample5.jpg",
+          "media_key": "media5"
+        }
+      ],
+      "theme_hint": "memes",
+      "score": 8,
+      "score_reason": "This tweet uses a highly relatable and common scenario (procrastinating on diets) and contrasts it with a humorous visual of late-night cravings. The juxtaposition is funny and uses a common meme format of 'Me vs. Also Me'."
+    },
+    {
+      "id": "1234567895",
+      "text": "When you finally understand the meme format everyone's been using for weeks 😂",
+      "created_at": "2025-10-18T09:30:00.000Z",
+      "author": {
+        "id": "116",
+        "name": "Funny Tweets",
+        "username": "funnytweets",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 3421,
+        "retweet_count": 678,
+        "reply_count": 123
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample6.jpg",
+          "media_key": "media6"
+        }
+      ],
+      "theme_hint": "memes",
+      "score": 7,
+      "score_reason": "Relatable situation for anyone who's ever been late to a meme trend. The \"finally understanding\" aspect is inherently funny, and the emoji adds to the lighthearted tone."
+    }
+  ]
+}

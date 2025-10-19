@@ -1,0 +1,12 @@
+{
+  "productivity": {
+    "theme": "Productivity & Work-Life Balance",
+    "prompt": "Helpful takes about productivity, burnout, and work–life balance",
+    "scoring_instruction": "Rate this tweet from 0-10 based on how well it provides helpful, actionable advice or thoughtful perspectives on productivity, avoiding burnout, or maintaining work-life balance. Look for: practical tips, personal experiences, mental health awareness, realistic advice, and thoughtful takes on work culture. Reject: spam, sales pitches, toxic hustle culture, or superficial advice."
+  },
+  "memes": {
+    "theme": "Funny Memes",
+    "prompt": "Funny memes",
+    "scoring_instruction": "Rate this tweet from 0-10 based on how funny, clever, or entertaining it is as a meme. Look for: humor, wit, relatable situations, clever observations, visual comedy, trending meme formats. Reject: offensive content, spam, or posts that aren't genuinely humorous."
+  }
+}
