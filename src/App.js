@@ -7,6 +7,7 @@ function App() {
   const [selectedTheme, setSelectedTheme] = useState('productivity');
   const [tweets, setTweets] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const themes = {
     productivity: {
@@ -38,6 +39,20 @@ function App() {
     setSelectedTheme(theme);
   };
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const query = searchQuery.toLowerCase().trim();
+
+    // Match search query to themes
+    if (query.includes('productivity') || query.includes('work') || query.includes('balance')) {
+      handleThemeChange('productivity');
+    } else if (query.includes('meme') || query.includes('funny') || query.includes('humor')) {
+      handleThemeChange('memes');
+    }
+    // Clear search after submitting
+    setSearchQuery('');
+  };
+
   return (
     <div className="App">
       <header className="header">
@@ -50,24 +65,26 @@ function App() {
         </div>
       </header>
 
-      <div className="theme-selector">
-        <div className="theme-selector-inner">
-          <h2>Choose your feed:</h2>
-          <div className="theme-buttons">
-            {Object.keys(themes).map((themeKey) => (
-              <button
-                key={themeKey}
-                className={`theme-button ${selectedTheme === themeKey ? 'active' : ''}`}
-                onClick={() => handleThemeChange(themeKey)}
-              >
-                <span className="theme-icon">{themes[themeKey].icon}</span>
-                <div className="theme-info">
-                  <span className="theme-name">{themes[themeKey].name}</span>
-                  <span className="theme-desc">{themes[themeKey].description}</span>
-                </div>
+      <div className="search-section">
+        <div className="search-container">
+          <h2>Search for a theme:</h2>
+          <form onSubmit={handleSearch} className="search-form">
+            <div className="search-input-wrapper">
+              <svg className="search-icon" viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"/>
+              </svg>
+              <input
+                type="text"
+                className="search-input"
+                placeholder='Try "productivity", "memes", "work", or "funny"...'
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <button type="submit" className="search-button">
+                Search
               </button>
-            ))}
-          </div>
+            </div>
+          </form>
         </div>
       </div>
 

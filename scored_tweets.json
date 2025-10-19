@@ -1,6 +1,31 @@
 {
   "productivity": [
     {
+      "id": "1234567890",
+      "text": "Hot take: The best productivity hack is learning to say no. Not everything deserves your time and energy. Protect your bandwidth like it's your most valuable resource - because it is. #productivity",
+      "created_at": "2025-10-18T10:30:00.000Z",
+      "author": {
+        "id": "111",
+        "name": "WorkLife Wisdom",
+        "username": "worklifewiz",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 1245,
+        "retweet_count": 342,
+        "reply_count": 87
+      },
+      "images": [
+        {
+          "url": "https://pbs.twimg.com/media/sample1.jpg",
+          "media_key": "media1"
+        }
+      ],
+      "theme_hint": "productivity",
+      "score": 9,
+      "score_reason": "Provides a clear, actionable, and insightful tip ('learning to say no') directly related to productivity and avoiding burnout by emphasizing the importance of protecting one's time and energy. It's a realistic and well-articulated perspective."
+    },
+    {
       "id": "1234567896",
       "text": "Stop glorifying the grind. Start normalizing rest. Your best work comes from a rested mind, not an exhausted one. #worklifebalance",
       "created_at": "2025-10-18T07:20:00.000Z",
@@ -23,32 +48,7 @@
       ],
       "theme_hint": "productivity",
       "score": 9,
-      "score_reason": "Strong message rejecting hustle culture and promoting rest as a form of productivity. Balanced tone and relevant phrasing make it resonate deeply with work-life balance themes."
-    },
-    {
-      "id": "1234567890",
-      "text": "Hot take: The best productivity hack is learning to say no. Not everything deserves your time and energy. Protect your bandwidth like it's your most valuable resource - because it is. #productivity",
-      "created_at": "2025-10-18T10:30:00.000Z",
-      "author": {
-        "id": "111",
-        "name": "WorkLife Wisdom",
-        "username": "worklifewiz",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 1245,
-        "retweet_count": 342,
-        "reply_count": 87
-      },
-      "images": [
-        {
-          "url": "https://pbs.twimg.com/media/sample1.jpg",
-          "media_key": "media1"
-        }
-      ],
-      "theme_hint": "productivity",
-      "score": 8,
-      "score_reason": "Promotes boundary-setting as a productivity tool. Clear and applicable advice for modern professionals seeking focus and balance."
+      "score_reason": "This tweet offers a clear, actionable insight by contrasting the harmful 'grind' culture with the beneficial practice of rest. It promotes mental health awareness and a healthier approach to work, aligning perfectly with the theme."
     },
     {
       "id": "1234567891",
@@ -73,7 +73,7 @@
       ],
       "theme_hint": "productivity",
       "score": 8,
-      "score_reason": "Highlights the false glorification of burnout and reframes rest as a strength. Well-aligned with productivity and mental health discourse."
+      "score_reason": "This tweet offers a valuable perspective on burnout, framing rest and breaks as strategic and productive, which aligns well with work-life balance themes. It promotes mental health awareness and challenges toxic hustle culture."
     },
     {
       "id": "1234567892",
@@ -98,115 +98,10 @@
       ],
       "theme_hint": "productivity",
       "score": 8,
-      "score_reason": "A balanced, nuanced perspective on work-life balance emphasizing flexibility and compassion for shifting priorities."
-    },
-    {
-      "id": "1051111111111111001",
-      "text": "Every day doesn’t have to be a high-output day. Sometimes showing up, doing what you can, and resting is the most productive thing you’ll do all week.",
-      "created_at": "2025-10-17T09:10:00.000Z",
-      "author": {
-        "id": "2101",
-        "name": "Focus Mode",
-        "username": "focusmodedaily",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 987,
-        "retweet_count": 214,
-        "reply_count": 46
-      },
-      "images": [],
-      "theme_hint": "productivity",
-      "score": 7,
-      "score_reason": "Encourages sustainable productivity through self-compassion. Reinforces the idea that effort and rest both have value."
-    },
-    {
-      "id": "1051111111111111002",
-      "text": "You don’t need to earn rest. Rest is part of the process, not the reward.",
-      "created_at": "2025-10-17T15:48:00.000Z",
-      "author": {
-        "id": "2102",
-        "name": "Work Gentle",
-        "username": "workgentle",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 1730,
-        "retweet_count": 390,
-        "reply_count": 75
-      },
-      "images": [],
-      "theme_hint": "productivity",
-      "score": 8,
-      "score_reason": "Simple but powerful reframe on rest culture. Strong resonance for both productivity and mental wellness audiences."
-    },
-    {
-      "id": "1051111111111111003",
-      "text": "If you don’t decide what matters most today, the internet will decide for you.",
-      "created_at": "2025-10-16T13:22:00.000Z",
-      "author": {
-        "id": "2103",
-        "name": "Mindful Grind",
-        "username": "mindfulgrind",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 1420,
-        "retweet_count": 315,
-        "reply_count": 54
-      },
-      "images": [],
-      "theme_hint": "productivity",
-      "score": 7,
-      "score_reason": "Concise and clever reflection on attention economy. Encourages intentional focus — a key productivity theme."
-    },
-    {
-      "id": "1051111111111111004",
-      "text": "Sometimes balance isn’t 50/50. It’s giving 80% to work one day and 20% the next, as long as you’re not giving 0% to yourself.",
-      "created_at": "2025-10-15T21:05:00.000Z",
-      "author": {
-        "id": "2104",
-        "name": "Steady Steps",
-        "username": "steadysteps",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 845,
-        "retweet_count": 200,
-        "reply_count": 33
-      },
-      "images": [],
-      "theme_hint": "productivity",
-      "score": 7,
-      "score_reason": "Balanced insight that promotes realistic self-management and emphasizes self-care alongside work demands."
+      "score_reason": "Provides a thoughtful and realistic perspective on work-life balance, acknowledging that it's not about strict equality but about prioritizing what's important and accepting fluctuations, which promotes mental health awareness."
     }
   ],
   "memes": [
-    {
-      "id": "1234567897",
-      "text": "Nobody:\nAbsolutely nobody:\nMy brain at 3am: Remember that embarrassing thing you did 7 years ago? 💀",
-      "created_at": "2025-10-18T06:45:00.000Z",
-      "author": {
-        "id": "118",
-        "name": "Comedy Central",
-        "username": "comedycentral",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 12456,
-        "retweet_count": 3421,
-        "reply_count": 678
-      },
-      "images": [
-        {
-          "url": "https://pbs.twimg.com/media/sample8.jpg",
-          "media_key": "media8"
-        }
-      ],
-      "theme_hint": "memes",
-      "score": 9,
-      "score_reason": "Classic relatable humor using a familiar meme format. Universally funny and perfectly timed for engagement."
-    },
     {
       "id": "1234567893",
       "text": "POV: You spent 3 hours debugging only to realize you forgot to save the file 💀 #programmer #meme",
@@ -230,7 +125,7 @@
       ],
       "theme_hint": "memes",
       "score": 8,
-      "score_reason": "Perfectly encapsulates developer frustration using humor. Clean execution and relatable punchline."
+      "score_reason": "This tweet uses a relatable situation for programmers (debugging, forgetting to save) and a popular meme format (POV). The skull emoji adds to the humor and frustration. It's clever and entertaining for its target audience."
     },
     {
       "id": "1234567894",
@@ -254,8 +149,8 @@
         }
       ],
       "theme_hint": "memes",
-      "score": 8,
-      "score_reason": "Simple and effective 'Me vs Also Me' structure. Visual humor with emojis boosts relatability and shareability."
+      "score": 7,
+      "score_reason": "This tweet uses a classic, relatable meme format about procrastination and indulgence, which is generally humorous and entertaining."
     },
     {
       "id": "1234567895",
@@ -280,97 +175,7 @@
       ],
       "theme_hint": "memes",
       "score": 7,
-      "score_reason": "Meta-meme humor that plays on internet culture awareness. Broadly appealing but slightly niche."
-    },
-    {
-      "id": "1051111111111111005",
-      "text": "Coworker: “How’s your workload?”\nMe: “Like a Jenga tower made of emails.”",
-      "created_at": "2025-10-18T08:35:00.000Z",
-      "author": {
-        "id": "3101",
-        "name": "Office Goblin",
-        "username": "officegoblin",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 2180,
-        "retweet_count": 510,
-        "reply_count": 112
-      },
-      "images": [
-        {
-          "url": "https://pbs.twimg.com/media/jenga_emails_meme.jpg",
-          "media_key": "media4"
-        }
-      ],
-      "theme_hint": "memes",
-      "score": 8,
-      "score_reason": "Clever workplace metaphor. Witty and relatable for anyone in office settings managing chaotic inboxes."
-    },
-    {
-      "id": "1051111111111111006",
-      "text": "My brain at 3pm: Let’s open the same 4 tabs again and pretend something new will happen.",
-      "created_at": "2025-10-18T09:57:00.000Z",
-      "author": {
-        "id": "3102",
-        "name": "Digital Chaos",
-        "username": "digitalchaos",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 1934,
-        "retweet_count": 482,
-        "reply_count": 99
-      },
-      "images": [
-        {
-          "url": "https://pbs.twimg.com/media/reopen_tabs_meme.jpg",
-          "media_key": "media5"
-        }
-      ],
-      "theme_hint": "memes",
-      "score": 8,
-      "score_reason": "Perfectly encapsulates digital burnout and procrastination loops in a humorous way. Sharp and relatable."
-    },
-    {
-      "id": "1051111111111111007",
-      "text": "Every day I tell myself I’ll take a short lunch break. Every day I eat cold pasta while typing with one hand.",
-      "created_at": "2025-10-18T12:04:00.000Z",
-      "author": {
-        "id": "3103",
-        "name": "Workday Diaries",
-        "username": "workdaydiaries",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 1655,
-        "retweet_count": 375,
-        "reply_count": 68
-      },
-      "images": [],
-      "theme_hint": "memes",
-      "score": 7,
-      "score_reason": "Depicts common remote work struggle humorously. Slightly niche but relatable for many office workers."
-    },
-    {
-      "id": "1051111111111111008",
-      "text": "Sometimes I close all my tabs and immediately panic because that was my entire memory system.",
-      "created_at": "2025-10-18T13:26:00.000Z",
-      "author": {
-        "id": "3104",
-        "name": "Browser Burnout",
-        "username": "browserburnout",
-        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
-      },
-      "metrics": {
-        "like_count": 2310,
-        "retweet_count": 590,
-        "reply_count": 102
-      },
-      "images": [],
-      "theme_hint": "memes",
-      "score": 8,
-      "score_reason": "Excellent digital-age humor. Highly relatable and perfectly phrased for comedic effect."
+      "score_reason": "Relatable situation and uses a common meme reaction emoji, indicating it's likely meant to be funny and clever for those who get it."
     }
   ]
 }

@@ -4,6 +4,7 @@ import './Tweet.css';
 function Tweet({ tweet }) {
   const [isLiked, setIsLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(tweet.metrics.like_count || 0);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -47,9 +48,20 @@ function Tweet({ tweet }) {
           <span className="timestamp">{formatDate(tweet.created_at)}</span>
         </div>
         <div className="ai-score">
-          <span className="score-badge" title={tweet.score_reason}>
-            AI: {tweet.score}/10
-          </span>
+          <div
+            className="score-badge-container"
+            onMouseEnter={() => setShowTooltip(true)}
+            onMouseLeave={() => setShowTooltip(false)}
+          >
+            <span className="score-badge">
+              AI: {tweet.score}/10
+            </span>
+            {showTooltip && tweet.score_reason && (
+              <div className="score-tooltip">
+                <p className="tooltip-text">{tweet.score_reason}</p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
