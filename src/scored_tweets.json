@@ -1,6 +1,25 @@
 {
   "productivity": [
     {
+      "id": "1051111111111111001",
+      "text": "Every day doesn't have to be a high-output day. Sometimes showing up, doing what you can, and resting is the most productive thing you'll do all week.",
+      "created_at": "2025-10-17T09:10:00.000Z",
+      "author": {
+        "id": "2101",
+        "name": "Focus Mode",
+        "username": "focusmodedaily",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 987,
+        "retweet_count": 214,
+        "reply_count": 46
+      },
+      "theme_hint": "productivity",
+      "score": 9,
+      "score_reason": "This tweet offers a compassionate perspective on productivity."
+    },
+    {
       "id": "1234567896",
       "text": "Stop glorifying the grind. Start normalizing rest. Your best work comes from a rested mind, not an exhausted one. #worklifebalance",
       "created_at": "2025-10-18T07:20:00.000Z",
@@ -99,6 +118,63 @@
       "theme_hint": "productivity",
       "score": 8,
       "score_reason": "This tweet offers a thoughtful and realistic perspective on work-life balance, reframing it from an 'equal time' metric to one of 'enough time for what matters.' It normalizes the ebb and flow of priorities, which is helpful for avoiding burnout and managing expectations."
+    },
+    {
+      "id": "1051111111111111002",
+      "text": "You don't need to earn rest. Rest is part of the process, not the reward.",
+      "created_at": "2025-10-17T15:48:00.000Z",
+      "author": {
+        "id": "2102",
+        "name": "Work Gentle",
+        "username": "workgentle",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 1730,
+        "retweet_count": 390,
+        "reply_count": 75
+      },
+      "theme_hint": "productivity",
+      "score": 9,
+      "score_reason": "This tweet challenges the common misconception about rest."
+    },
+    {
+      "id": "1051111111111111003",
+      "text": "If you don't decide what matters most today, the internet will decide for you.",
+      "created_at": "2025-10-16T13:22:00.000Z",
+      "author": {
+        "id": "2103",
+        "name": "Mindful Grind",
+        "username": "mindfulgrind",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 1420,
+        "retweet_count": 315,
+        "reply_count": 54
+      },
+      "theme_hint": "productivity",
+      "score": 8,
+      "score_reason": "This tweet highlights the importance of intentional prioritization."
+    },
+    {
+      "id": "1051111111111111004",
+      "text": "Sometimes balance isn't 50/50. It's giving 80% to work one day and 20% the next, as long as you're not giving 0% to yourself.",
+      "created_at": "2025-10-15T21:05:00.000Z",
+      "author": {
+        "id": "2104",
+        "name": "Steady Steps",
+        "username": "steadysteps",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 845,
+        "retweet_count": 200,
+        "reply_count": 33
+      },
+      "theme_hint": "productivity",
+      "score": 8,
+      "score_reason": "This tweet provides a realistic approach to work-life balance."
     }
   ],
   "memes": [
@@ -201,6 +277,82 @@
       "theme_hint": "memes",
       "score": 7,
       "score_reason": "Relatable situation for anyone who's ever been late to a meme trend. The \"finally understanding\" aspect is inherently funny, and the emoji adds to the lighthearted tone."
+    },
+    {
+      "id": "1051111111111111005",
+      "text": "Coworker: \"How's your workload?\"\nMe: \"Like a Jenga tower made of emails.\"",
+      "created_at": "2025-10-18T08:35:00.000Z",
+      "author": {
+        "id": "3101",
+        "name": "Office Goblin",
+        "username": "officegoblin",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 2180,
+        "retweet_count": 510,
+        "reply_count": 112
+      },
+      "theme_hint": "memes",
+      "score": 8,
+      "score_reason": "Creative office humor with visual metaphor."
+    },
+    {
+      "id": "1051111111111111006",
+      "text": "My brain at 3pm: Let's open the same 4 tabs again and pretend something new will happen.",
+      "created_at": "2025-10-18T09:57:00.000Z",
+      "author": {
+        "id": "3102",
+        "name": "Digital Chaos",
+        "username": "digitalchaos",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 1934,
+        "retweet_count": 482,
+        "reply_count": 99
+      },
+      "theme_hint": "memes",
+      "score": 8,
+      "score_reason": "Relatable digital behavior humor."
+    },
+    {
+      "id": "1051111111111111007",
+      "text": "Every day I tell myself I'll take a short lunch break. Every day I eat cold pasta while typing with one hand.",
+      "created_at": "2025-10-18T12:04:00.000Z",
+      "author": {
+        "id": "3103",
+        "name": "Workday Diaries",
+        "username": "workdaydiaries",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 1655,
+        "retweet_count": 375,
+        "reply_count": 68
+      },
+      "theme_hint": "memes",
+      "score": 8,
+      "score_reason": "Relatable work-life humor."
+    },
+    {
+      "id": "1051111111111111008",
+      "text": "Sometimes I close all my tabs and immediately panic because that was my entire memory system.",
+      "created_at": "2025-10-18T13:26:00.000Z",
+      "author": {
+        "id": "3104",
+        "name": "Browser Burnout",
+        "username": "browserburnout",
+        "profile_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+      },
+      "metrics": {
+        "like_count": 2310,
+        "retweet_count": 590,
+        "reply_count": 102
+      },
+      "theme_hint": "memes",
+      "score": 8,
+      "score_reason": "Humorous take on browser tab management."
     }
   ]
 }
